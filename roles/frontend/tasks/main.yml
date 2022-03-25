@@ -37,12 +37,8 @@
       src: /tmp/frontend-main/static/
       dest: /usr/share/nginx/html/
       remote_src: yes
-      
-- name: Start service
-  ansible.builtin.systemd:
-    name: nginx
-    state: restarted
-    enable: yes
+
+
 
 
 
