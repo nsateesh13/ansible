@@ -16,6 +16,7 @@
       ansible.builtin.debug:
         msg: URL ={{URL}}
 
+
 - name: Tasks level variable
   hosts: all
   tasks:
