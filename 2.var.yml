@@ -21,6 +21,6 @@
   tasks:
     - name: Print URL
       ansbile.builtin.debug:
-        msg: URL ={{URL}}
+        msg: URL = {{URL}}
       vars:
         URL: tasksleve.com.sg
