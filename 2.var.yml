@@ -20,8 +20,17 @@
   hosts: all
   tasks:
     - name: Print URL
-      ansbile.builtin.debug:
-        msg: URL = {{URL}}
+      ansible.builin.debug:
+        msg: URL ={{URL}
       vars:
-        URL: tasksleve.com.sg
+        URL: test1.type.com
+
+- name: Tasks levels variables
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL1 ={{URL1}}
+      vars:
+        URL1: test1.copy.com
 
