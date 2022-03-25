@@ -36,6 +36,8 @@
   ansible.builtin.copy:
       src: /tmp/frontend-main/static/
       dest: /usr/share/nginx/html/
+      remote_src: yes
+      
 - name: Start service
   ansible.builtin.systemd:
     name: nginx
