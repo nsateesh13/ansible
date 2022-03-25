@@ -16,16 +16,6 @@
       ansible.builtin.debug:
         msg: URL ={{URL}}
 
-
-- name: Tasks level variable
-  hosts: all
-  tasks:
-    - name: Print URL
-      ansible.builin.debug:
-        msg: URL ={{URL}
-      vars:
-        URL: test1.type.com
-
 - name: Tasks levels variables
   hosts: all
   tasks:
