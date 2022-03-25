@@ -1,10 +1,10 @@
-192.168.0.10
+URL: 192.168.0.10
 sample.roboshop.internal
 192.168.0[1:15]
 3.239.180.160
 
 [WEB]
-frontend.roboshop.internal
+URL: frontend.roboshop.internal
 
 [DB]
 mysql.roboshop.internal
