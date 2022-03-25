@@ -25,11 +25,11 @@
       vars:
         URL: test1.copy.com
 
-- name: Fact variable
+- name: Fact Variable
   hosts: all
   tasks:
     - name: Print Hostname
-      ansible.build.debug:
+      ansible.builtin.debug:
         msg: Architecture = {{ansible_architecture}}, IP address = {{ansible_eth0.ipv4.address}}
 
 
