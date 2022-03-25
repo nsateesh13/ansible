@@ -1,0 +1,3 @@
+- name: Print Frontend
+  ansible.buitlin.debug:
+    msg: Frontend
