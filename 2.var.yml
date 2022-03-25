@@ -19,7 +19,7 @@
 - name: Task level variable
   hosts: all
   tasks:
-    - name: Print Task level URL
+    - name: Print URL
       ansbile.builtin.debug:
         msg: URL ={{URL}}
       vars:
