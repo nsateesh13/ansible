@@ -1,5 +1,5 @@
 #- name: Play on role
 - name: Play on role
   hosts: all
-  role:
+  roles:
     - demo
