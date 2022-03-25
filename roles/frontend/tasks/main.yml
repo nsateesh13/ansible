@@ -39,7 +39,9 @@
       remote_src: yes
 
 - name: Copy Roboshop cfg
-  -
+  ansible.build.copy:
+     src: roboshop.conf
+     dest: /etc/nginx/default.d/roboshop.conf
 
 - name: Start service
   ansible.builtin.systemd:
