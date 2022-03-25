@@ -28,7 +28,7 @@
 - name: Fact variable
   hosts: all
   tasks:
-    - name: Print URL
+    - name: Print Hostname
       ansible.build.debug:
         msg: Architecture = {{ansible_architecture}}, IP address = {{ansible_eth0.ipv4.address}}
 
