@@ -1,11 +1,11 @@
 - name: Play level variables
   hosts: all
   vars:
-    URL1: test.example.com
+    URL: test.example.com
   tasks:
     - name: Print URL
       ansible.builtin.debug:
-        msg: URL ={{URL1}}
+        msg: URL ={{URL}}
 
 - name: Play level variable from a file
   hosts: all
@@ -21,7 +21,7 @@
   tasks:
     - name: Print URL
       ansible.builtin.debug:
-        msg: URL ={{URL1}}
+        msg: URL ={{URL}}
       vars:
-        URL1: test1.copy.com
+        URL: test1.copy.com
 
