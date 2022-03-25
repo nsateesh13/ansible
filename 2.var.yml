@@ -25,3 +25,11 @@
       vars:
         URL: test1.copy.com
 
+- name: Inventory level
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+      msg: URL ={{URL}}
+
+
