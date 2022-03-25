@@ -23,8 +23,8 @@
 
 - name: download and extract frontend
   ansible.builtin.unarchive:
-    src: clone http://github.com/roboshop-devops-project/frontend/archive/main.zip"
-    dest: /tmp/
+    src: http://github.com/roboshop-devops-project/frontend/archive/main.zip"
+    dest: /tmp
     remote_src: yes
 
 - name: Recursively remove directory
