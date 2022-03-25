@@ -1,4 +1,4 @@
 - name: Setup Frontend Component
-  ansible.builtin.debug:
+    hosts: FRONTEND
     roles:
       - frontend
