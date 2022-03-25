@@ -21,7 +21,7 @@
     name: nginx
     state: installed
 
-- name: downloa pkgs and intall
+- name: download and extract frontend
   ansible.builtin.unarchive:
     src: https://github.com/roboshop-devops-project/frontend/archive/main.zip"
     dest: /tmp/
@@ -41,7 +41,7 @@
     name: nginx
     state: restarted
     enable: yes
-    
+
 
 
 
