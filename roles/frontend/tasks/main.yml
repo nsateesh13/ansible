@@ -38,7 +38,14 @@
       dest: /usr/share/nginx/html/
       remote_src: yes
 
+- name: Copy Roboshop cfg
+  -
 
+- name: Start service
+  ansible.builtin.systemd:
+    name: nginx
+    state: restarted
+    enable: yes
 
 
 
