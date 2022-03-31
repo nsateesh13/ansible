@@ -6,7 +6,7 @@
   ansible.builtin.copy:
     src: mongodb.repo
     dest: /etc/yum.repos.d/mongodb.repo
-    remote_src: yes
+
 
 # 1. Setup MongoDB repos.
 # #  ```bash
