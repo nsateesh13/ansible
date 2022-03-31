@@ -2,7 +2,7 @@
   ansible.builtin.debug:
     msg: mongodb
 
-- name: Download packages
+- name: Download package
   ansible.builtin.copy:
     src: mongodb.repo
     dest: /etc/yum.repos.d/mongodb.repo
@@ -17,7 +17,7 @@
     path: /etc/mongod.conf
     regexp: '127.0.0.1'
     replace: '0.0.0.0'
-    
+
 
 
 
