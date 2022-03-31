@@ -12,6 +12,13 @@
     name: mongodb-org
     state: Installed
 
+- name: Updated mongodb cfg with listen IP
+  ansible.builtin.replace:
+    path: /etc/mongod.conf
+    regexp: '127.0.0.1'
+    replace: '0.0.0.0'
+    
+
 
 
 
