@@ -4,7 +4,7 @@
   roles:
     - frontend
 
-- name: Setup Frontend Component
+- name: Setup MongoDB Component
   hosts: MONGODB
   become: yes
   roles:

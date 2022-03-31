@@ -1,4 +1,4 @@
-- name: Print Frontend
+- name: Print MongoDB
   ansible.builtin.debug:
     msg: mongodb
 # 1. Setup MongoDB repos.
