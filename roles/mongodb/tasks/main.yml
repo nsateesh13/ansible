@@ -1,6 +1,6 @@
 - name: Print MongoDB
   ansible.builtin.debug:
-    msg: mongodb
+    msg: mongoDB
 
 - name: Download package
   ansible.builtin.copy:
@@ -10,7 +10,7 @@
 - name: Install MongoDB
   ansible.builtin.yum:
     name: mongodb-org
-    state: installed
+    state: present
 
 - name: Updated mongodb cfg with listen IP
   ansible.builtin.replace:
