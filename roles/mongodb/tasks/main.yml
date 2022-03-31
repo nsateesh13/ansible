@@ -1,6 +1,13 @@
 - name: Print MongoDB
   ansible.builtin.debug:
     msg: mongodb
+
+- name: Download packages
+  ansible.builtin.unarchive:
+    src: https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo
+    dest: /tmp
+    remote_src: yes
+
 # 1. Setup MongoDB repos.
 # #  ```bash
 #  curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo
