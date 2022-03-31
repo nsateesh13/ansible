@@ -9,7 +9,7 @@
 
 - name: Install MongoDB
   ansible.builtin.yum:
-    name: mongodb-org
+    name: mongodb-org-4.2
     state: present
 
 - name: Updated mongodb cfg with listen IP
