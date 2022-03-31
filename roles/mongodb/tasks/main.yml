@@ -3,9 +3,9 @@
     msg: mongodb
 
 - name: Download packages
-  ansible.builtin.unarchive:
-    src: https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo
-    dest: /tmp
+  ansible.builtin.copy:
+    src: mongo.repo
+    dest: /etc/yum.repos.d/mongodb.repo
     remote_src: yes
 
 # 1. Setup MongoDB repos.
