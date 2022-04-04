@@ -30,6 +30,11 @@
     dest: /tmp
     remote_src: yes
 
+- name: Load catalgoue schema
+  community.mongodb.mongodb_shell:
+    file: "/tmp/mongodb-main/catalogue.js"
+    idempotent: yes
+
 
 
 
