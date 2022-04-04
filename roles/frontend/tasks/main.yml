@@ -25,7 +25,7 @@
   include_role:
     name: common
     tasks_from: download
-    
+
 - name: Recursively remove directory
   ansible.builtin.file:
     path: /usr/share/nginx/html
