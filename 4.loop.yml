@@ -11,7 +11,7 @@
 
 - name: Print Color Name with inv
   debug:
-    msg: Color Name = {{item.name}} , Avaiable count = {{item.count}}
+    msg: Color Name = {{item.name}} , Available count = {{item.count}}
     loop:
       - {name: red, count: 10}
       - {name: blue, count: 9}
