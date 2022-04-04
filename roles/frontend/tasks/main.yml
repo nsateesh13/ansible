@@ -22,11 +22,10 @@
     state: installed
 
 - name: download and extract frontend
-  ansible.builtin.unarchive:
-    src: http://github.com/roboshop-devops-project/frontend/archive/main.zip
-    dest: /tmp
-    remote_src: yes
-
+  include_role:
+    name: common
+    tasks_from: download
+    
 - name: Recursively remove directory
   ansible.builtin.file:
     path: /usr/share/nginx/html
