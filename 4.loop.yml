@@ -9,7 +9,7 @@
         - blue
         - yellow
 
-- name: Print coloy Name with inv
+- name: Print Color Name with inv
   debug:
     msg: Color Name = {{item.name}}, Avaiable count = {{item.count}}
     loop:
