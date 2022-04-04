@@ -18,5 +18,6 @@
 
 - name: Robosho Setup
   become: yes
+  hosts: '{{HOST}}'
   roles:
     - "{{role_name}}"
