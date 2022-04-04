@@ -8,3 +8,11 @@
         - red
         - blue
         - yellow
+
+- name: Print color name with Inventory
+  debug:
+    msg: Color Name = {{item.name}}, Avaiable count = {{item.count}}
+    loop:
+      - {name: red, count: 10}
+      - {name: blue, count: 9}
+      - {name: yellow, count: 8}
