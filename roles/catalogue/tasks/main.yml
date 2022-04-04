@@ -1,3 +1,7 @@
+#- name: Print Catalogue
+#  ansible.builtin.debug:
+#    msg: Catalogue
+
 - name: Print Catalogue
   ansible.builtin.debug:
     msg: Catalogue
