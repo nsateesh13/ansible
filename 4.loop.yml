@@ -9,10 +9,10 @@
         - blue
         - yellow
 
-- name: Print Color Name with inv
-  debug:
-    msg: Color Name = {{item.name}}, Avaiable count = {{item.count}}
-    loop:
-      - {name: red, count: 10}
-      - {name: blue, count: 9}
-      - {name: yellow, count: 8}
+    - name: Print Color Name and Invetory Count
+      debug:
+        msg: Color Name = {{item.name}} , Available Count = {{item.count}}
+      loop:
+        - {name: red, count: 10}
+        - {name: blue, count: 20}
+        - {name: Yellow, count: 30}
