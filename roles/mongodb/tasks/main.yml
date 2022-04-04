@@ -37,7 +37,7 @@
 
 - name: Load user scheme
   community.mongodb.mongodb_shell:
-    - file: "/tmp/mongodb-main/user.js"
+  file: "/tmp/mongodb-main/user.js"
       idempotent: yes
 
 
