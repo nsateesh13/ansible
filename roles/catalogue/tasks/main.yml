@@ -21,5 +21,6 @@
   ansible.builtin.unarchive:
     src: https://github.com/roboshop-devops-project/catalogue/archive/main.zip
     dest: /home/roboshop/
+    remote_src: yes
     become_user: roboshop
-    
+
