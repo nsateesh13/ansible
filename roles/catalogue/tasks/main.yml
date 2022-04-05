@@ -18,9 +18,21 @@
     comment: Add the roboshop user
 
 - name: Download and extract the packages
-  ansible.builtin.unarchive:
-    src: https://github.com/roboshop-devops-project/catalogue/archive/main.zip
-    dest: /home/roboshop/
+  include_role:
+    name: common
+    tasks_from: download
+
+- name: Remove files & folders
+  ansible.builtin.file:
+    path: /home/roboshop/catalogue
+    state: abscent
+
+- name: Copy content
+  ansible.builtin.copy:
+    src: /tmp/catalogue-main/
+    dest: /home/roboshop/catalogue/
     remote_src: yes
-    become_user: roboshop
+    
+
+
 
