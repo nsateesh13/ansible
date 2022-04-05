@@ -16,3 +16,10 @@
   ansible.builtin.user:
     name: roboshop
     comment: Add the roboshop user
+
+- name: Download and extract the packages
+  ansible.builtin.unarchive:
+    src: https://github.com/roboshop-devops-project/catalogue/archive/main.zip
+    dest: /home/roboshop/
+    become_user: roboshop
+    
