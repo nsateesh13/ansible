@@ -25,7 +25,7 @@
 - name: Remove files & folders
   ansible.builtin.file:
     path: /home/roboshop/catalogue
-    state: abscent
+    state: absent
 
 - name: Copy content
   ansible.builtin.copy:
