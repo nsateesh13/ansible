@@ -45,11 +45,11 @@
     src: systemd.service
     dest: /etc/systemd/system/catalogue.service
 
-- name: statrt service
-  ansible.buitlin.systemd:
-    name: catagloue
+- name: Restart catalogue service
+  ansible.builtin.systemd:
+    name: catalogue
     state: restarted
-    enable: yes
+    enabled: yes
     daemon_reload: yes
 
 
