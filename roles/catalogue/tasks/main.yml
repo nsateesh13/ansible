@@ -47,7 +47,7 @@
 
 - name: statrt service
   ansible.builtin.systemd:
-    name: catagloue
+    name: catalogue
     state: restarted
     enabled: yes
     daemon_reload: yes
