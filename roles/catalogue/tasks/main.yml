@@ -38,5 +38,18 @@
 - name: Install node.js dependencis
   community.general.npm:
     path: /home/roboshop/catalogue
+  become_user: roboshop
+
+- name:  Copy sysetm service file
+  ansible.builtin.copy:
+    src: systemd.service
+    dest: /etc/systemd/system/catalogue.service
+
+- name: statrt service
+  ansible.buitlin.systemd:
+    name: catagloue
+    state: restarted
+    enable: yes
+    daemon_reload: yes
 
 
