@@ -3,7 +3,7 @@
     msg: Catalogue
 
 - name: Configure Yum repos
-  ansible.buiiltin.shell: curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
+  ansible.builtin.shell: curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
 
 - name: Instaall NodeJS
   ansible.builtin.yum:
